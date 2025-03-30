@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Perkenalan</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif; 
+            margin: 0;
+            padding: 20px;
+        }
+        .tampilan-awal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 50px;
+        }
+        .bagian-teks-awal {
+            flex: 1;
+            text-align: left;
+            min-width: 250px;
+        }
+        h1 {
+            font-size: 2.6em;
+            margin: 0;
+            font-weight: 500; 
+        }
+        .highlight {
+            color: #00bcd4;
+            font-size: 1.3em;
+            font-weight: 700; 
+            display: block;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.4em;
+            margin-top: 10px;
+            line-height: 1.5; 
+            font-weight: 400;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            margin: 0 15px 0 0;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 35px;
+            height: 35px;
+        }
+        .bagian-foto {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .bagian-foto::before{
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .bagian-foto img {
+            width: 280px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+        .bagian-bg-box {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            line-height: 1.5;
+        }
+        .bagian-judul {
+            color: #00bcd4;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 600; 
+            line-height: 1.5; 
+        }
+        .bagian-isi-konten {
+            text-align: center;
+            font-size: 1em;
+            line-height: 1.5; 
+        }
+        .tabel-info {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        .tabel-info th, .tabel-info td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: center;
+            line-height: 1.5; 
+        }
+        .tabel-info th {
+            background-color: #00bcd4;
+            color: #000000;
+            font-weight: 600; 
+        }
+        ul {
+            line-height: 1.5; 
+            font-size: 1em;
+        }
+        b {
+            font-weight: 600; 
+        }
+    </style>
+</head>
+<body>
+    <div class="tampilan-awal">
+        <div class="bagian-teks-awal">
+            <h1>Hello, my name is</h1>
+            <h1><span class="highlight">Aurellia Lathifah Khairunnisa</span></h1>
+            <p>I'm an Information Systems student.</p>
+            <div class="social-icons">
+                <a href="mailto:lkaurellia@gmail.com">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
+                </a>
+                <a href="https://www.instagram.com/aurelliaalk">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/aurelliaalk/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin">
+                </a>
+            </div>
+        </div>
+        
+        <div class="bagian-foto">
+            <img src="foto.png" alt="Profile Picture">
+        </div>
+    </div>
+
+    <div class="bagian-bg-box">
+        <h3 class="bagian-judul">TENTANG SAYA</h3>
+        <p class="bagian-isi-konten">Mahasiswa Sistem Informasi dengan semangat tinggi untuk belajar dan berkembang di bidang teknologi. Memiliki minat yang kuat untuk mengeksplorasi inovasi dan manajemen produk. Aktif terlibat dalam organisasi kampus yang mendukung pengembangan soft skills dan kepemimpinan. Antusias untuk terus mengembangkan pengetahuan akademis dengan melibatkan pengalaman praktis.</p>
+    </div>
+
+    <div class="bagian-bg-box">
+        <h3 class="bagian-judul">PENDIDIKAN</h3>
+        <ul class="bagian-isi-konten">
+            S1 Sistem Informasi, Universitas Brawijaya (Agustus 2024 - Sekarang)
+            <br>
+            Jurusan IPA, SMAS IT As-Syifa Boarding School (Juli 2021 - Juni 2024)
+        </ul>
+    </div>
+
+    <div class="bagian-bg-box">
+        <h3 class="bagian-judul">PENGALAMAN ORGANISASI</h3>
+        <div class="bagian-isi-konten">
+            <b>Staf Muda BEM FILKOM 2024</b><br>Kementrian Sosial dan Lingkungan (Oktober 2024 - Desember 2024)
+            <br><br>
+            <b>Staf Ahli BEM FILKOM 2025</b><br>Kementrian Sosial dan Lingkungan (Februari 2025 - Sekarang)
+        </div>
+    </div>
+
+    <div class="bagian-bg-box">
+        <h3 class="bagian-judul">INFORMASI TAMBAHAN</h3>
+        <table class="tabel-info">
+            <tr>
+                <th>Keterampilan teknis</th>
+                <th>Keterampilan Non-Teknis</th>
+            </tr>
+            <tr>
+                <td>Microsoft Office (Word, Excel)</td>
+                <td>Komunikatif</td>
+            </tr>
+            <tr>
+                <td>Desain grafis dasar menggunakan Canva</td>
+                <td>Manajemen waktu</td>
+            </tr>
+            <tr>
+                <td>Dasar pemrograman bahasa Java</td>
+                <td>Pemecahan masalah</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
